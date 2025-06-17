@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   isDarkTheme,
   isDesktop,
 }) => {
-  const isLoggedIn = !!localStorage.getItem("token");
+  const isLoggedIn = true;
 
   const baseClasses = `
     w-[250px] p-5 pt-[60px] h-[100vh] overflow-y-auto relative
@@ -82,7 +82,7 @@ const SidebarLinks: React.FC<{
       </li>
     ) : (
       <>
-        <li>
+        {/* <li>
           <Link to="/login" onClick={onClose}>
             <Button fullWidth>Вход</Button>
           </Link>
@@ -91,7 +91,7 @@ const SidebarLinks: React.FC<{
           <Link to="/register" onClick={onClose}>
             <Button fullWidth>Регистрация</Button>
           </Link>
-        </li>
+        </li> */}
       </>
     )}
   </>
