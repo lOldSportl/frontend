@@ -9,8 +9,8 @@ import Requirements from "./pages/Requirements";
 import RequirementDetails from "./pages/RequirementDetails";
 import Needs from "./pages/Needs";
 import NeedDetails from "./pages/NeedDetails";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+// import Login from "./pages/Login";
+// import Register from "./pages/Register";
 import Specification from "./pages/Specification";
 import Glossary from "./pages/Glossary";
 import { DataProvider } from "./context/DataProvider";
@@ -62,8 +62,8 @@ const App: React.FC = () => {
           <main className="flex-1 pt-[60px] px-6 transition-all duration-300">
             <Routes>
               <Route path="/" element={<Projects />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
+              {/* <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} /> */}
               <Route
                 path="/profile"
                 element={
