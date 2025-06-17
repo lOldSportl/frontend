@@ -7,11 +7,11 @@ interface ProfileProps {
 }
 
 const Profile: React.FC<ProfileProps> = ({ isDarkTheme, onThemeChange }) => {
-  const isLoggedIn = !!localStorage.getItem("token");
+  //const isLoggedIn = true;
 
-  if (!isLoggedIn) {
-    return <div className="p-6 text-red-500">Вы не авторизованы.</div>;
-  }
+  // if (!isLoggedIn) {
+  //   return <div className="p-6 text-red-500">Вы не авторизованы.</div>;
+  // }
 
   const handleThemeChange = (checked: boolean) => {
     onThemeChange(checked);
